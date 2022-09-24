@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:background="#4A5EC3"
+		android:layout_height="match_parent">
+	<ListView
+			android:layout_width="370dp"
+			android:layout_height="0dp"
+			android:id="@+id/list_item"
+			app:layout_constraintTop_toBottomOf="@+id/usersearchView"
+			app:layout_constraintStart_toStartOf="@+id/guideline6"
+			app:layout_constraintEnd_toStartOf="@+id/guideline7" app:layout_constraintBottom_toBottomOf="parent"/>
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:scaleType="fitXY"
+			app:srcCompat="@android:drawable/ic_menu_upload"
+			android:id="@+id/floatingActionButton"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:layout_marginEnd="16dp"
+			android:layout_marginBottom="16dp"
+			android:focusable="true"
+			tools:ignore="ContentDescription"/>
+	<androidx.constraintlayout.widget.Guideline
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintGuide_percent="0.05"
+			android:id="@+id/guideline6"/>
+	<androidx.constraintlayout.widget.Guideline
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintGuide_percent="0.95"
+			android:id="@+id/guideline7"/>
+	<androidx.constraintlayout.widget.Guideline
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintGuide_percent="0.03"
+			android:id="@+id/guideline8"/>
+	<SearchView
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:id="@+id/usersearchView"
+			android:queryHint="search..."
+			android:contextClickable="true"
+			tools:ignore="UnusedAttribute"
+			app:layout_constraintTop_toTopOf="@+id/guideline8" app:layout_constraintStart_toStartOf="@+id/guideline6"
+			app:layout_constraintEnd_toStartOf="@+id/imageView"/>
+	<ImageView
+			android:layout_width="50dp"
+			android:layout_height="0dp"
+			app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+			android:scaleType="centerCrop"
+			android:id="@+id/imageView"
+			android:layout_weight="1"
+			app:layout_constraintEnd_toEndOf="@+id/list_item" app:layout_constraintTop_toTopOf="@+id/guideline8"
+			app:layout_constraintBottom_toBottomOf="@+id/usersearchView" tools:ignore="ContentDescription"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:elevation="3dp"
+		android:layout_width="match_parent"
+		android:background="#00FFFFFF"
+		android:layout_height="570dp">
+	<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/sape">
+		<EditText
+				android:layout_width="250dp"
+				android:layout_height="wrap_content"
+				android:inputType="textPersonName"
+				android:hint="@string/product_name"
+				android:ems="10"
+				android:id="@+id/edipopuptitle"
+				app:layout_constraintTop_toTopOf="parent"
+				android:layout_marginTop="60dp"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintEnd_toEndOf="parent" tools:ignore="Autofill"/>
+		<EditText
+				android:layout_width="250dp"
+				android:layout_height="wrap_content"
+				android:inputType="textPersonName"
+				android:hint="@string/meaning"
+				android:ems="10"
+				android:id="@+id/edipopupmeaning"
+				tools:ignore="Autofill"
+				app:layout_constraintTop_toBottomOf="@+id/textView3"
+				android:layout_marginTop="24dp" app:layout_constraintStart_toStartOf="@+id/btnpopupsave"
+				app:layout_constraintEnd_toEndOf="@+id/btnpopupsave"/>
+		<EditText
+				android:layout_width="250dp"
+				android:layout_height="wrap_content"
+				android:inputType="number"
+				android:hint="@string/product_price"
+				android:ems="10"
+				android:id="@+id/edipopupyouword"
+				app:layout_constraintStart_toStartOf="@+id/edipopuptitle"
+				app:layout_constraintEnd_toEndOf="@+id/edipopuptitle"
+				app:layout_constraintTop_toBottomOf="@+id/edipopuptitle" android:layout_marginTop="36dp"
+				app:layout_constraintHorizontal_bias="0.0"/>
+		<Button
+				android:text="@string/save"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/btnpopupsave"
+				android:background="@color/purple_200"
+				app:layout_constraintBottom_toTopOf="@+id/view4"
+				android:layout_marginBottom="12dp"
+				app:layout_constraintStart_toEndOf="@+id/view2"
+				app:layout_constraintEnd_toStartOf="@+id/view3"/>
+		<View
+				android:layout_width="30dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/view2"
+				app:layout_constraintEnd_toStartOf="@+id/edipopupyouword"
+				app:layout_constraintTop_toTopOf="parent"/>
+		<View
+				android:layout_width="30dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/view3"
+				app:layout_constraintStart_toEndOf="@+id/edipopupyouword"
+				app:layout_constraintTop_toTopOf="parent"/>
+		<View
+				android:layout_width="0dp"
+				android:layout_height="3dp"
+				android:id="@+id/view4"
+				android:background="@color/white"
+				app:layout_constraintTop_toBottomOf="@+id/checkBoxpopup"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/view2"
+				app:layout_constraintEnd_toEndOf="@+id/view3" android:layout_marginTop="104dp"/>
+		<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="50dp"
+				android:text="@string/favourite"
+				app:buttonTint="@color/black"
+				android:textColor="@color/black"
+				app:layout_constraintTop_toBottomOf="@+id/edipopupyouword"
+				app:layout_constraintStart_toStartOf="@+id/edipopupyouword" android:id="@+id/checkBoxpopup"/>
+		<TextView
+				android:text="@string/validation"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/textView3"
+				app:layout_constraintTop_toBottomOf="@+id/view4"
+				android:layout_marginTop="16dp" app:layout_constraintEnd_toStartOf="@+id/view3"
+				app:layout_constraintStart_toEndOf="@+id/view2"/>
+		<Button
+				android:text="@string/all"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/purple_200"
+				android:id="@+id/btnpopupmenu"
+				app:layout_constraintEnd_toEndOf="@+id/edipopupyouword"
+				app:layout_constraintTop_toBottomOf="@+id/edipopupyouword"
+				app:layout_constraintBottom_toBottomOf="@+id/checkBoxpopup"/>
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

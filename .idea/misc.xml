@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Dilshodjon/IdeaProjects/StudentApp/app/src/main/res/drawable-v24/ic_firstline.xml" value="0.1" />
+        <entry key="..\:/Users/Dilshodjon/IdeaProjects/StudentApp/app/src/main/res/drawable-v24/sape.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/Dilshodjon/IdeaProjects/StudentApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/Dilshodjon/IdeaProjects/StudentApp/app/src/main/res/layout/activity_main.xml" value="0.2125" />
+        <entry key="..\:/Users/Dilshodjon/IdeaProjects/StudentApp/app/src/main/res/layout/add_product.xml" value="0.2125" />
+        <entry key="..\:/Users/Dilshodjon/IdeaProjects/StudentApp/app/src/main/res/layout/item.xml" value="0.2125" />
+        <entry key="..\:/Users/Dilshodjon/IdeaProjects/StudentApp/app/src/main/res/layout/popupadd.xml" value="0.25" />
+        <entry key="..\:/Users/Dilshodjon/IdeaProjects/StudentApp/app/src/main/res/layout/popupread.xml" value="0.2125" />
+        <entry key="..\:/Users/Dilshodjon/IdeaProjects/StudentApp/app/src/main/res/menu/menu.xml" value="0.22708333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="jbr-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

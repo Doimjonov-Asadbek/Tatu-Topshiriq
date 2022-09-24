@@ -1,0 +1,55 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="2dp"
+		android:padding="6dp"
+		android:id="@+id/item_layout"
+		app:cardCornerRadius="10sp"
+		app:cardElevation="8dp">
+	<View
+			android:layout_width="wrap_content"
+			android:layout_height="100dp"
+			android:background="@drawable/sape"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:id="@+id/view6"
+			app:layout_constraintTop_toTopOf="parent"/>
+	<TextView
+			android:text="@string/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="22sp"
+			android:id="@+id/txtitmtitle"
+			app:layout_constraintStart_toStartOf="@+id/view6" app:layout_constraintTop_toTopOf="@+id/view6"
+			android:layout_marginTop="3dp"
+			android:layout_marginStart="16dp"/>
+	<TextView
+			android:text="@string/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtitmyouword"
+			app:layout_constraintTop_toBottomOf="@+id/txtitmtitle"
+			android:layout_marginTop="4dp"
+			app:layout_constraintStart_toStartOf="@+id/txtitmtitle"/>
+	<Button
+			android:text="@string/delete"
+			android:layout_width="80dp"
+			android:layout_height="40dp"
+			android:id="@+id/btnitemdelete"
+			android:background="@color/purple_200"
+			app:layout_constraintBottom_toBottomOf="@+id/btnitemedit" app:layout_constraintEnd_toEndOf="@+id/view6"
+			android:layout_marginEnd="12dp"
+			app:layout_constraintTop_toTopOf="@+id/btnitemedit"/>
+	<Button
+			android:text="@string/edit"
+			android:layout_width="80dp"
+			android:layout_height="40dp"
+			android:id="@+id/btnitemedit"
+			android:background="@color/purple_200"
+			app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@+id/btnitemdelete"
+			android:layout_marginEnd="12dp"
+			android:layout_marginBottom="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#4A5EC3"
+		android:id="@+id/constraintLayout"
+		tools:context=".MainActivity">
+	
+	<TextView
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:paddingTop="20dp"
+			android:paddingStart="20dp"
+			android:fontFamily="@font/fredoka_fonts"
+			android:textSize="25sp"
+			android:textColor="#F6C514"
+			android:text="@string/welcome_to"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.0"
+			app:layout_constraintBottom_toTopOf="@+id/btnaddproduct" tools:ignore="RtlSymmetry"
+			app:layout_constraintStart_toStartOf="@+id/guideline2"
+			app:layout_constraintEnd_toStartOf="@+id/guideline3" app:layout_constraintHorizontal_bias="0.0"
+			android:id="@+id/textview"/>
+	<Button
+			android:text="@string/add_new_product"
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:id="@+id/btnaddproduct"
+			android:background="@color/purple_200"
+			android:textColor="@color/white"
+			app:layout_constraintStart_toStartOf="@+id/guideline2"
+			app:layout_constraintTop_toTopOf="@+id/guideline" app:layout_constraintEnd_toStartOf="@+id/guideline3"
+			app:layout_constraintHorizontal_bias="1.0"/>
+	<Button
+			android:text="@string/data_picker"
+			android:layout_width="329dp"
+			android:layout_height="40dp"
+			android:id="@+id/btndatapicer"
+			android:background="@color/purple_200"
+			android:textColor="@color/white"
+			app:layout_constraintTop_toBottomOf="@+id/btngallarey"
+			android:layout_marginTop="12dp" app:layout_constraintStart_toStartOf="@+id/guideline2"
+			app:layout_constraintEnd_toEndOf="@+id/btngallarey" app:layout_constraintHorizontal_bias="0.0"/>
+	<Button
+			android:text="@string/gallarey"
+			android:layout_width="329dp"
+			android:layout_height="40dp"
+			android:id="@+id/btngallarey"
+			android:background="@color/purple_200"
+			android:textColor="@color/white"
+			app:layout_constraintTop_toBottomOf="@+id/imageView2"
+			android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="@+id/guideline2"
+			app:layout_constraintEnd_toStartOf="@+id/guideline3" app:layout_constraintHorizontal_bias="0.0"/>
+	<androidx.constraintlayout.widget.Guideline
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintGuide_percent="0.21"
+			android:id="@+id/guideline"/>
+	<androidx.constraintlayout.widget.Guideline
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintGuide_percent="0.10"
+			android:id="@+id/guideline2"/>
+	<androidx.constraintlayout.widget.Guideline
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintGuide_percent="0.90"
+			android:id="@+id/guideline3"/>
+	<androidx.constraintlayout.widget.Guideline
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintGuide_percent="0.61"
+			android:id="@+id/guideline4"/>
+	<TextView
+			android:text="@string/date_picker11"
+			android:layout_width="329dp"
+			android:layout_height="158dp"
+			android:paddingTop="20dp"
+			android:paddingStart="20dp"
+			android:id="@+id/textView"
+			app:layout_constraintTop_toBottomOf="@+id/btndatapicer"
+			app:layout_constraintStart_toStartOf="@+id/btndatapicer"
+			app:layout_constraintEnd_toEndOf="@+id/btndatapicer" tools:ignore="RtlSymmetry"/>
+	<DatePicker
+			android:id="@+id/datePicker"
+			android:layout_width="300dp"
+			android:layout_height="500dp"
+			android:elevation="8dp"
+			android:visibility="gone"
+			android:layout_centerHorizontal="true"
+			app:layout_constraintTop_toTopOf="@+id/textview" app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/guideline3"
+			app:layout_constraintStart_toStartOf="@+id/guideline2" app:layout_constraintHorizontal_bias="0.482"
+			app:layout_constraintVertical_bias="0.498"/>
+	<ImageView
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:paddingTop="15dp"
+			app:srcCompat="@android:drawable/ic_menu_crop"
+			android:id="@+id/imageView2"
+			android:scaleType="centerCrop"
+			tools:ignore="ContentDescription"
+			app:layout_constraintTop_toBottomOf="@+id/btnaddproduct"
+			app:layout_constraintBottom_toTopOf="@+id/guideline4" app:layout_constraintVertical_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline2"
+			app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
